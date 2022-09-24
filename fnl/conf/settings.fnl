@@ -11,7 +11,7 @@
 (fn escape [combination]
   (vim.api.nvim_replace_termcodes combination true true true))
 
-;;; =========================
+;;; =========================g2„Í35ZX4awwwg2„zz{g2„Í35ZX3awwwg2„Í35ZX3ZX3
 ;;; Local variable definition
 ;;; =========================
 ; Define configuration folder
@@ -171,8 +171,11 @@
 ;; Timeout for mappings
 (set! timeoutlen 500)
 
+;; Leader
+(let! mapleader " ")
+
 ;; LocalLeader
-(let! maplocalleader (escape "<space>"))
+(let! maplocalleader ",")
 
 ;; Markdown
 (let! markdown_fenced_languages ["ts=typescript"])

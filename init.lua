@@ -5,6 +5,10 @@ local function fprint(string, ...)
   print(string.format(string, ...))
 end
 
+if vim.g.neovide then
+  vim.g.neovide_transparency = 0.97
+end
+
 -- A function that verifies if the plugin passed as a parameter is installed,
 -- if it isn't it will be installed
 ---@param plugin string #the plugin, must follow the format `username/repository`
